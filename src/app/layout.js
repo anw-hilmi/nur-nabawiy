@@ -19,7 +19,7 @@ export const metadata = {
     title: "Yayasan Pendidikan Islam",
     description:
       "Website resmi yayasan pendidikan, akreditasi terbaik, pembentukan karakter islami.",
-    url: "https://yayasan-anda.com", // Ganti dengan domain asli nanti
+    url: "web-yayasan-wheat.vercel.app", // Ganti dengan domain asli nanti
     siteName: "Yayasan Pendidikan",
     images: [
       {
