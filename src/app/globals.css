@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface Colors */
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container: #e5eeff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #3d4a3e;
+
+  /* Outline Colors */
+  --color-outline: #6d7b6d;
+  --color-outline-variant: #bccabb;
+
+  /* Primary Colors */
+  --color-primary: #006d36;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4ade80;
+  --color-on-primary-container: #005e2d;
+
+  /* Secondary Colors */
+  --color-secondary: #545f73;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d5e0f8;
+
+  /* Tertiary Colors */
+  --color-tertiary: #55615a;
+  --color-on-tertiary: #ffffff;
+
+  /* Error Colors (Penting untuk Form & Validasi) */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+
+  /* Background Colors */
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+}
+
+:root {
+  --border: #bccabb;
+  --bg: #f8f9ff;
+  --text: #0b1c30;
+  --muted: #545f73;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
