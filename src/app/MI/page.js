@@ -109,10 +109,8 @@ export default function MadrasahIbtidaiyah() {
     <div className="bg-background min-h-screen">
       {/* Hero Section */}
       <Hero
-        title="Madrasah Ibtidaiyah (MI) Yayasan Harmoni"
-        description="Unggul dalam Prestasi, Santun dalam Perilaku. Kami membentuk generasi Qurani yang cerdas secara akademik dan mulia secara akhlak."
+        title="Madrasah Ibtidaiyah (MI)"
         bgImage="https://lh3.googleusercontent.com/aida-public/AB6AXuCpy9rIzvJnrDASVQZjpdpgqTyaxlwqAxh5eoTknBfbfn-9kZdFtiG2eM0SM6pELne_r3Brkyg2ueZ1NWiOw_QFUou2HygTsi90uPDwzGL_uwaGeia_UqQWaNzplKKBzr-ueUk_LJbciB7_q4mC1zi6t1wd3bn4FHr3mf79fcMcZeAlX7Uw78gg5TOkldfXNbLdP3whJ9Agbrqt2MfiS0sk05h0WBK1UL7mxccNRV8YZMaqEGQ91RScXHBpK1yME5HG_z6mKZzK2g"
-        primaryBtnText="Daftar Sekarang"
       />
 
       {/* Kurikulum & Program Utama */}

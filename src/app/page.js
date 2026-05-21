@@ -6,6 +6,7 @@ import {
   MdVerifiedUser,
   MdFormatQuote,
 } from "react-icons/md";
+import Button from "@/components/ui/Button";
 
 export default function Home() {
   return (
@@ -35,12 +36,14 @@ export default function Home() {
               membutuhkan.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-primary-container text-on-primary-container px-8 py-3.5 rounded-xl font-semibold shadow-md hover:bg-opacity-90 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
-                Daftar Sekarang
-              </button>
-              <button className="border-2 border-on-primary text-on-primary px-8 py-3.5 rounded-xl font-semibold hover:bg-on-primary hover:text-primary hover:-translate-y-0.5 transition-all duration-200">
+              {/* Tombol 1: Menggunakan warna default (Primary Container) */}
+              <Button href="/Pendaftaran">Daftar Sekarang</Button>
+              <Button
+                href="/LKSA"
+                className="bg-secondary text-on-secondary hover:bg-opacity-80"
+              >
                 Donasi Sekarang
-              </button>
+              </Button>
             </div>
           </div>
         </div>
@@ -349,12 +352,12 @@ export default function Home() {
             yatim dan dhuafa di yayasan kami.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-surface-container-lowest text-primary px-8 py-3.5 rounded-xl font-bold hover:bg-surface-container transition-all shadow-md hover:-translate-y-0.5">
+            <Button
+              href="/LKSA"
+              className="bg-secondary text-on-secondary hover:bg-opacity-80"
+            >
               Hubungi Kami
-            </button>
-            <button className="bg-primary-container text-on-primary-container px-8 py-3.5 rounded-xl font-bold hover:bg-opacity-90 hover:shadow-lg transition-all hover:-translate-y-0.5">
-              Donasi via WhatsApp
-            </button>
+            </Button>
           </div>
         </section>
       </main>

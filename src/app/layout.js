@@ -10,23 +10,23 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-// Tambahkan konfigurasi metadata di sini
 export const metadata = {
-  title: "Yayasan Pendidikan Islam",
+  title: "Yayasan Nur Nabawiy",
   description:
-    "Website resmi yayasan pendidikan, akreditasi terbaik, pembentukan karakter islami.",
+    "Website resmi Yayasan Nur Nabawiy. Pusat layanan pendidikan Islam, PAUD, TK, MI, TPQ-Madin, dan LKSA.",
   openGraph: {
-    title: "Yayasan Pendidikan Islam",
+    title: "Yayasan Nur Nabawiy",
     description:
-      "Website resmi yayasan pendidikan, akreditasi terbaik, pembentukan karakter islami.",
-    url: "web-yayasan-wheat.vercel.app", // Ganti dengan domain asli nanti
-    siteName: "Yayasan Pendidikan",
+      "Website resmi Yayasan Nur Nabawiy. Pusat layanan pendidikan Islam, PAUD, TK, MI, TPQ-Madin, dan LKSA.",
+    url: "https://web-yayasan-wheat.vercel.app", // Wajib pakai https://
+    siteName: "Yayasan Nur Nabawiy",
     images: [
       {
-        url: "https://www.google.com/imgres?q=nur%20nabawiy&imgurl=https%3A%2F%2Flookaside.instagram.com%2Fseo%2Fgoogle_widget%2Fcrawler%2F%3Fmedia_id%3D3865415970580161368&imgrefurl=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWkt1hrjWNY%2F&docid=LtU-6EZqxZSSwM&tbnid=xoC9UiDHBdhfzM&vet=12ahUKEwiasrnB0saUAxUb4TgGHSs5NBMQnPAOegQIFBAB..i&w=1438&h=753&hcb=2&itg=1&ved=2ahUKEwiasrnB0saUAxUb4TgGHSs5NBMQnPAOegQIFBAB", // Ganti dengan URL gambar asli nanti
+        // URL gambar langsung dari CDN Instagram milik yayasan Anda
+        url: "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3865415970580161368",
         width: 1200,
         height: 630,
-        alt: "Pratinjau Yayasan Pendidikan",
+        alt: "Pratinjau Yayasan Nur Nabawiy",
       },
     ],
     locale: "id_ID",
@@ -36,11 +36,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body className={`${poppins.variable} antialiased`}>
         <div className="bg-neutral-50 min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow pt-20">{children}</main>
           <Footer />
         </div>
       </body>

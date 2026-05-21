@@ -71,7 +71,7 @@ export default function NavBar() {
             <NavLink href="/" pathname={pathname}>
               Beranda
             </NavLink>
-            <NavLink href="/1profil" pathname={pathname}>
+            <NavLink href="/Profil" pathname={pathname}>
               Profil
             </NavLink>
 
@@ -80,7 +80,7 @@ export default function NavBar() {
               <button
                 onClick={() => setDesktopUnitOpen(!desktopUnitOpen)}
                 className={`flex items-center gap-1 transition-colors hover:text-primary
-                ${pathname.startsWith("/3paud") || pathname.startsWith("/4mi") || pathname.startsWith("/2tpq") ? "text-primary font-semibold" : "text-on-surface"}`}
+                ${pathname.startsWith("/PAUD") || pathname.startsWith("/TK") || pathname.startsWith("/MI") || pathname.startsWith("TPQ-Madin") ? "text-primary font-semibold" : "text-on-surface"}`}
               >
                 Unit Pendidikan
                 <span
@@ -92,26 +92,29 @@ export default function NavBar() {
 
               {desktopUnitOpen && (
                 <div className="absolute left-0 mt-4 w-56 bg-surface-container-lowest border border-outline-variant rounded-2xl shadow-xl p-2 animate-in fade-in slide-in-from-top-2 duration-200">
-                  <DropdownLink href="/3paud" pathname={pathname}>
-                    PAUD & TK
+                  <DropdownLink href="/PAUD" pathname={pathname}>
+                    PAUD
                   </DropdownLink>
-                  <DropdownLink href="/4mi" pathname={pathname}>
+                  <DropdownLink href="/TK" pathname={pathname}>
+                    TK
+                  </DropdownLink>
+                  <DropdownLink href="/MI" pathname={pathname}>
                     MI
                   </DropdownLink>
-                  <DropdownLink href="/2tpq" pathname={pathname}>
+                  <DropdownLink href="/TPQ-Madin" pathname={pathname}>
                     TPQ & Madin
                   </DropdownLink>
                 </div>
               )}
             </div>
 
-            <NavLink href="/5lksa" pathname={pathname}>
+            <NavLink href="/LKSA" pathname={pathname}>
               LKSA
             </NavLink>
-            <NavLink href="/6ppdb" pathname={pathname}>
+            <NavLink href="/Pendaftaran" pathname={pathname}>
               Pendaftaran
             </NavLink>
-            <NavLink href="/7kontak" pathname={pathname}>
+            <NavLink href="/Kontak" pathname={pathname}>
               Kontak
             </NavLink>
           </nav>
@@ -134,7 +137,7 @@ export default function NavBar() {
           <MobileLink href="/" pathname={pathname}>
             Beranda
           </MobileLink>
-          <MobileLink href="/1profil" pathname={pathname}>
+          <MobileLink href="/Profil" pathname={pathname}>
             Profil
           </MobileLink>
 
@@ -153,26 +156,29 @@ export default function NavBar() {
 
             {unitOpen && (
               <div className="bg-surface-container border-y border-outline-variant/30">
-                <MobileLink href="/3paud" pathname={pathname} isNested>
-                  PAUD & TK
+                <MobileLink href="/PAUD" pathname={pathname} isNested>
+                  PAUD
                 </MobileLink>
-                <MobileLink href="/4mi" pathname={pathname} isNested>
+                <MobileLink href="/TK" pathname={pathname} isNested>
+                  TK
+                </MobileLink>
+                <MobileLink href="/MI" pathname={pathname} isNested>
                   MI
                 </MobileLink>
-                <MobileLink href="/2tpq" pathname={pathname} isNested>
+                <MobileLink href="/TPQ-Madin" pathname={pathname} isNested>
                   TPQ & Madin
                 </MobileLink>
               </div>
             )}
           </div>
 
-          <MobileLink href="/5lksa" pathname={pathname}>
+          <MobileLink href="/LKSA" pathname={pathname}>
             LKSA
           </MobileLink>
-          <MobileLink href="/6ppdb" pathname={pathname}>
+          <MobileLink href="/Pendaftaran" pathname={pathname}>
             Pendaftaran
           </MobileLink>
-          <MobileLink href="/7kontak" pathname={pathname}>
+          <MobileLink href="/Kontak" pathname={pathname}>
             Kontak
           </MobileLink>
         </div>

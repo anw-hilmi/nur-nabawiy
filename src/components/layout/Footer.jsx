@@ -3,7 +3,6 @@ import Link from "next/link";
 import { IoLogoInstagram } from "react-icons/io";
 import { FiYoutube } from "react-icons/fi";
 import { SlSocialFacebook } from "react-icons/sl";
-import { MdWhatsapp } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -31,10 +30,10 @@ export default function Footer() {
 
             <ul className="space-y-2 text-sm">
               <FooterLink href="/">Beranda</FooterLink>
-              <FooterLink href="/1profil">Profil</FooterLink>
-              <FooterLink href="/5lksa">LKSA</FooterLink>
-              <FooterLink href="/6ppdb">Pendaftaran</FooterLink>
-              <FooterLink href="/7kontak">Kontak</FooterLink>
+              <FooterLink href="/Profil">Profil</FooterLink>
+              <FooterLink href="/LKSA">LKSA</FooterLink>
+              <FooterLink href="/Pendaftaran">Pendaftaran</FooterLink>
+              <FooterLink href="/Kontak">Kontak</FooterLink>
             </ul>
           </div>
 
@@ -45,9 +44,10 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-2 text-sm">
-              <FooterLink href="/3paud">PAUD & TK</FooterLink>
-              <FooterLink href="/4mi">MI</FooterLink>
-              <FooterLink href="/2tpq">TPQ & Madin</FooterLink>
+              <FooterLink href="/PAUD">PAUD</FooterLink>
+              <FooterLink href="/Tk">TK</FooterLink>
+              <FooterLink href="/MI">MI</FooterLink>
+              <FooterLink href="/TPQ-Madin">TPQ & Madin</FooterLink>
             </ul>
           </div>
 
@@ -81,9 +81,6 @@ export default function Footer() {
             </SocialIcon>
             <SocialIcon href="#">
               <FiYoutube size={18} />
-            </SocialIcon>
-            <SocialIcon href="https://wa.me/62812XXXXXXXX">
-              <MdWhatsapp size={18} />
             </SocialIcon>
           </div>
         </div>
