@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import Image from "next/image";
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -56,12 +57,15 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-20">
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3 font-bold group">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQebkPrhConEyebU1OPYv5F43rnhSyRufAetg&s"
+            <Image
+              src="/logo.png"
               alt="Logo"
-              className="h-10 w-10 object-cover rounded-xl border border-outline-variant group-hover:scale-105 transition-transform"
+              width={40}
+              height={40}
+              className="object-cover rounded-xl group-hover:scale-105 transition-transform"
+              priority
             />
-            <span className="hidden md:inline text-lg bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">
+            <span className="hidden md:inline text-lg text-primary">
               Yayasan Nur Nabawiy
             </span>
           </Link>
@@ -80,7 +84,7 @@ export default function NavBar() {
               <button
                 onClick={() => setDesktopUnitOpen(!desktopUnitOpen)}
                 className={`flex items-center gap-1 transition-colors hover:text-primary
-                ${pathname.startsWith("/PAUD") || pathname.startsWith("/TK") || pathname.startsWith("/MI") || pathname.startsWith("TPQ-Madin") ? "text-primary font-semibold" : "text-on-surface"}`}
+                ${pathname.startsWith("/PAUD") || pathname.startsWith("/TK") || pathname.startsWith("/MI") || pathname.startsWith("/TPQ-Madin") ? "text-primary font-semibold" : "text-on-surface"}`}
               >
                 Unit Pendidikan
                 <span

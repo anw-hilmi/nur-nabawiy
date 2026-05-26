@@ -1,49 +1,53 @@
 @import "tailwindcss";
 
 @theme {
+  /* ==========================================================================
+     PALET WARNA RESMI MI NUR NABAWIY (Tailwind CSS v4 @theme)
+     ========================================================================== */
+
   /* Surface Colors */
   --color-surface: #f8f9ff;
   --color-surface-dim: #cbdbf5;
   --color-surface-bright: #f8f9ff;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container: #e5eeff;
-  --color-on-surface: #0b1c30;
-  --color-on-surface-variant: #3d4a3e;
+  --color-surface-container: #e8f5e9; /* Hijau Sangat Muda */
+  --color-on-surface: #115234; /* Hijau Tua */
+  --color-on-surface-variant: #41b56c; /* Hijau Logo Baru */
 
   /* Outline Colors */
-  --color-outline: #6d7b6d;
-  --color-outline-variant: #bccabb;
+  --color-outline: #115234; /* Hijau Tua */
+  --color-outline-variant: #84cfa0; /* DIGANTI: Hijau Sage Menengah untuk aksen border halus */
 
   /* Primary Colors */
-  --color-primary: #006d36;
+  --color-primary: #41b56c; /* Hijau Logo Baru */
   --color-on-primary: #ffffff;
-  --color-primary-container: #4ade80;
-  --color-on-primary-container: #005e2d;
+  --color-primary-container: #e8f5e9; /* Hijau Sangat Muda */
+  --color-on-primary-container: #115234; /* Hijau Tua */
 
   /* Secondary Colors */
-  --color-secondary: #545f73;
+  --color-secondary: #115234; /* Hijau Tua */
   --color-on-secondary: #ffffff;
-  --color-secondary-container: #d5e0f8;
+  --color-secondary-container: #84cfa0; /* DIGANTI: Hijau Sage Menengah */
 
   /* Tertiary Colors */
-  --color-tertiary: #55615a;
-  --color-on-tertiary: #ffffff;
+  --color-tertiary: #e8f5e9; /* DIGANTI: Menggunakan Hijau Sangat Muda */
+  --color-on-tertiary: #115234; /* Hijau Tua */
 
-  /* Error Colors (Penting untuk Form & Validasi) */
+  /* Error Colors */
   --color-error: #ba1a1a;
   --color-on-error: #ffffff;
   --color-error-container: #ffdad6;
 
   /* Background Colors */
-  --color-background: #f8f9ff;
-  --color-on-background: #0b1c30;
+  --color-background: #ffffff; /* Putih Bersih untuk KBM */
+  --color-on-background: #115234; /* Hijau Tua */
 }
 
 :root {
-  --border: #bccabb;
-  --bg: #f8f9ff;
-  --text: #0b1c30;
-  --muted: #545f73;
+  --border: #41b56c; /* Hijau Logo */
+  --bg: #ffffff; /* Putih Bersih */
+  --text: #115234; /* Hijau Tua */
+  --muted: #84cfa0; /* DIGANTI: Hijau Sage Menengah untuk sorotan kecil */
 }
 
 html,

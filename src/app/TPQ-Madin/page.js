@@ -1,16 +1,11 @@
 "use client";
 import React from "react";
-import Hero from "@/components/ui/Hero";
-import {
-  MdMenuBook,
-  MdVolunteerActivism,
-  MdMosque,
-  MdAutoAwesome,
-} from "react-icons/md";
-import CtaDaftar from "@/components/ui/CtaDaftar";
-import Struktur from "@/components/ui/Struktur";
-import InformasiLembaga from "@/components/ui/InformasiLembaga";
-import GaleriAktivitas from "@/components/ui/GaleriAktivitas";
+import Hero from "@/components/Hero";
+import { MdMenuBook } from "react-icons/md";
+import CtaDaftar from "@/components/CtaDaftar";
+import Struktur from "@/components/Struktur";
+import InformasiLembaga from "@/components/InformasiLembaga";
+import GaleriAktivitas from "@/components/GaleriAktivitas";
 
 export default function TpqMadin() {
   // cta daftar

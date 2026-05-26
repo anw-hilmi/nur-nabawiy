@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import Hero from "@/components/ui/Hero";
+import Hero from "@/components/Hero";
 import { PiBaby } from "react-icons/pi";
 import { HiSparkles } from "react-icons/hi2";
 import { MdArrowForward } from "react-icons/md";
-import Struktur from "@/components/ui/Struktur";
-import InformasiLembaga from "@/components/ui/InformasiLembaga";
-import GaleriAktivitas from "@/components/ui/GaleriAktivitas";
-import CtaDaftar from "@/components/ui/CtaDaftar";
+import Struktur from "@/components/Struktur";
+import InformasiLembaga from "@/components/InformasiLembaga";
+import GaleriAktivitas from "@/components/GaleriAktivitas";
+import CtaDaftar from "@/components/CtaDaftar";
 
 export default function PaudTk() {
   // cta daftar

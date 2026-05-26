@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <h2 className="text-xl font-semibold mb-4 bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">
+            <h2 className="text-xl font-semibold mb-4 text-primary">
               Yayasan Nur Nabawiy
             </h2>
 
@@ -89,13 +89,13 @@ export default function Footer() {
   );
 }
 
-/* FOOTER LINK */
+/* FOOTER LINK - PERBAIKAN: li sekarang berada di posisi paling luar */
 function FooterLink({ href, children }) {
   return (
     <li>
       <Link
         href={href}
-        className="text-on-surface-variant transition-colors duration-200 hover:text-primary"
+        className="hover:text-primary text-on-surface-variant transition-colors py-1 relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100"
       >
         {children}
       </Link>
@@ -110,7 +110,7 @@ function SocialIcon({ children, href }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="p-2 rounded-full inline-flex items-center justify-center bg-surface-container-lowest border border-outline-variant text-primary hover:bg-secondary-container mx-auto block w-fit"
+      className="p-2 rounded-full inline-flex items-center justify-center bg-surface-container-lowest border border-outline-variant text-primary transition-all duration-200 hover:bg-primary hover:text-on-primary hover:border-primary hover:scale-110 mx-auto block w-fit"
     >
       {children}
     </a>

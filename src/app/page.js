@@ -1,12 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import {
-  MdAutoStories,
-  MdApartment,
-  MdVerifiedUser,
-  MdFormatQuote,
-} from "react-icons/md";
-import Button from "@/components/ui/Button";
+import { MdAutoStories, MdApartment, MdVerifiedUser } from "react-icons/md";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (

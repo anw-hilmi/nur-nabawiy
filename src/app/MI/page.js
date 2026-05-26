@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Hero from "@/components/ui/Hero";
+import Hero from "@/components/Hero";
 import {
   MdMenuBook,
   MdTranslate,
@@ -13,10 +13,10 @@ import {
 } from "react-icons/md";
 import { FaCampground } from "react-icons/fa";
 import { useRef } from "react";
-import Struktur from "@/components/ui/Struktur"; // Sesuaikan path file komponen
-import InformasiLembaga from "@/components/ui/InformasiLembaga";
-import GaleriAktivitas from "@/components/ui/GaleriAktivitas";
-import CtaDaftar from "@/components/ui/CtaDaftar";
+import Struktur from "@/components/Struktur"; // Sesuaikan path file komponen
+import InformasiLembaga from "@/components/InformasiLembaga";
+import GaleriAktivitas from "@/components/GaleriAktivitas";
+import CtaDaftar from "@/components/CtaDaftar";
 
 export default function MadrasahIbtidaiyah() {
   // cta daftar
